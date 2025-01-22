@@ -8,7 +8,6 @@ import lombok.Data;
 public class BoardGame {
 
     private Long id;
-    private Long test;
     private String name;
     private int level;
     private int minPlayers;
