@@ -26,7 +26,7 @@ import com.javaproject.database.DatabaseAccess;
 class TestController {
 
     private DatabaseAccess da;
-    private MockMvc mockMvc;
+    private MockMvc mockMvc; 
 
     @Autowired
     public void setDatabase(DatabaseAccess da) {
