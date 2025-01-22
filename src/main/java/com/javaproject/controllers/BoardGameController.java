@@ -54,7 +54,7 @@ public class BoardGameController {
     public ResponseEntity<?> getBoardGame(@PathVariable Long id) {
         BoardGame boardGame = da.getBoardGame(id);
         if (boardGame != null) {
-            return ResponseEntity.ok(boardGame);
+            return ResponseEntity.ok(boardGame); 
         } else {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body(new ErrorMessage("No such record"));
         }
