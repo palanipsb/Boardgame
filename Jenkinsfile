@@ -14,7 +14,7 @@ pipeline {
         }
         stage('test') {
             when {
-                changeset "test/java/com/javaproject/TestController.java"
+                changeset "src/test/java/com/javaproject/TestController.java"
             }
             steps {
                 sh "mvn test"
